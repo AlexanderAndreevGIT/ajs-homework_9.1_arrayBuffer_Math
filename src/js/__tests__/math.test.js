@@ -1,10 +1,5 @@
 import Magician from '../characters/magician';
 
-// const merlin = new Magician('Merlin');
-// merlin.distance = 0;
-// merlin.stoned = true;
-// merlin.attack = 200;
-
 test('class Math should set / get stoned status', () => {
   const merlin = new Magician('Merlin');
   const expected = true;
@@ -60,18 +55,3 @@ test('class Math should set / get attack', () => {
   const expected = 85;
   expect(merlin.attack).toEqual(expected);
 });
-
-// test.each([
-//   [[1, 100], 100],
-//   [[2, 100], 90],
-//   [[3, 100], 80],
-// ])(
-//   ('class Character should throw name error'),
-//   (input, expected) => {
-//     expect(() => {
-//       merlin.distance = input[0];
-//       merlin.attack = input[1];
-//       return merlin.attack;
-//     }).toBe(expected);
-//   },
-// );
